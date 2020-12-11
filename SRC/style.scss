@@ -18,26 +18,15 @@ box-shadow:inset 0 -5px 0 0 rgba(0,0,0,0.15),0 5px 11px rgba(0,0,0,0.2);
     }
 
     &--success {
-        background-color: colors.$success;
-
-        &:hover {
-        background-color: colors.$success-dark;
+      @include mixin.btn-styled(colors.$success,colors.$success-dark);
         }
-    }
     &--warning {
-        background-color: colors.$warning;
-    
-        &:hover {
-        background-color: colors.$warning-dark;
-            }
-        }
-    &--danger {
-        background-color: colors.$danger;
         
-        &:hover {
-        background-color: colors.$danger-dark;
-                }
+       @include mixin.btn-styled(colors.$success,colors.$success-dark);
+            }
+        
+    &--danger {
+        @include mixin.btn-styled(colors.$success,colors.$success-dark);
         }
-    
-    
+        
     }
