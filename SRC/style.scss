@@ -1,4 +1,6 @@
 @use 'colors';
+@use 'mixins';
+
 .btn {
     border: none;
     border-radius: 0.25 REM;
